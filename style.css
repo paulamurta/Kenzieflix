@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'IBMPlexSans-Medium.ttf';
+  src: url('../fonts/IBMPlexSans-Medium.ttf');
+  
+}
+
+@font-face {
+  font-family: 'IBMPlexSans-SemiBold';
+  src: url('../fonts/IBMPlexSans-SemiBold.ttf');
+}
+
+body, main, img, p, section, div, button, figure{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 30px 10px 30px;
+  background-color: transparent;
+  border: 1px solid white;
+  font-family: 'IBMPlexSans-Medium', sans-serif;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+
+.container-home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #121214;
+}
+
+.text {
+  font-family: 'IBMPlexSans-SemiBold', sans-serif;
+  color: white;
+  font-size: 30px;
+}
+
+.container-cards {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-user {
+  max-width: 160px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-img {
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-user {
+  transition: transform 0.5s;
+}
+
+.img-user:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.name-user {
+  font-family: 'IBMPlexSans-SemiBold', sans-serif;
+  color: white;
+  font-size: 14px;
+}
+
+.img-add {
+  background-color: #1E1E20;
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-add:hover {
+  cursor: pointer;
+}
+
+.img-add:hover .add-circle {
+  border: solid 5px white;
+}
+
+.img-add:hover .add-hifen-v {
+  background-color: white;
+}
+
+.img-add:hover .add-hifen-h {
+  background-color: white;
+}
+
+
+.add-circle {
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: solid 5px #6F6F70;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.add-hifen-v {
+  background-color: #6F6F70;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  position: relative;
+  top: 22.5px;
+}
+
+.add-hifen-h {
+  background-color: #6F6F70;
+  width: 5px;
+  height: 25px;
+  border-radius: 5px;
+  position: relative;
+  top: 8px;
+}
+
